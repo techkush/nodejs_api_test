@@ -4,10 +4,10 @@ How to make a API use in JavaScript (Node Js)
 
 How to install
 
-# 1. npm init
-# 2. npm install --save express
+1. npm init
+2. npm install --save express
 
-# 3. create Server.js and Copy this code ->
+3. create Server.js and Copy this code ->
 
 const http = require('http');
 const app = require('./app');
@@ -18,7 +18,7 @@ const server = http.createServer(app);
 
 server.listen(port);
 
-# 4. create app.js and copy this code ->
+4. create app.js and copy this code ->
 
 const express = require('express');
 const app = express();
@@ -64,12 +64,12 @@ module.exports = app;
 //     })
 // });
 
-# 5. node server.js -> goto browser and serach http://localhost:3000 (cmd ipcongig -> ipv4 address) / http://192.168.1.7:3000
-# 6. npm install --save-dev nodemon and add this part in package.json ->
+5. node server.js -> goto browser and serach http://localhost:3000 (cmd ipcongig -> ipv4 address) / http://192.168.1.7:3000
+6. npm install --save-dev nodemon and add this part in package.json ->
   scrip: {
     "start": "nodemon server.js"
   }
-# 7. npm start (Automatically restart when you save the code)
-# 8. npm install --save morgan
-# 9. npm install --save body-parser
+7. npm start (Automatically restart when you save the code)
+8. npm install --save morgan
+9. npm install --save body-parser
 
